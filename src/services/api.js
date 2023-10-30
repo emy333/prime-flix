@@ -6,4 +6,4 @@ const api = axios.create({
 
 export default api;
 
-// BASE DA API : https://www.themoviedb.org/3
+// BASE DA API : https://api.themoviedb.org/3
