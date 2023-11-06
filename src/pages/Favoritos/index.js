@@ -11,6 +11,10 @@ function Favoritos(){
         setFilmes(JSON.parse(minhaLista) || [])
     }, [])
 
+    function excluirFilme(id){
+        
+    }
+
     return(
         <div className='meus-filmes'>
             <h1>Meus Filmes</h1>
@@ -21,7 +25,7 @@ function Favoritos(){
                             <span>{item.title}</span>
                             <div>
                                 <Link to={`/filme/${item.id}`}>Ver detalhes</Link>
-                                <button>Excluir</button>
+                                <button onClick={()=>excluirFilme(item.id)}>Excluir</button>
                             </div>
                         </li>
                     )
